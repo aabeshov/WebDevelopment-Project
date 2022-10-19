@@ -1,0 +1,6 @@
+<div *ngIf="!loading">
+  <p class="fs-3 align-middle text-center pt-2">{{category.name}}</p>
+  <app-product-list [categoryId]="category.id"></app-product-list>
+  <p class="fs-3 align-middle text-center"><button class="btn btn-outline-primary align-middle text-center pt-2" (click)="goBack()">Go back</button></p>
+</div>
+<p *ngIf="loading">We are loading category.</p>
